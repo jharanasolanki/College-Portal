@@ -1,0 +1,78 @@
+/* Main Button Area css
+============================================================================================ */
+.primary-btn {
+  display: inline-block;
+  background: $primary-color;
+  padding: 0px 48px;
+  color: $title-color;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 50px;
+  border-radius: 5px;
+  outline: none !important;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  @include transition();
+  &:hover {
+    background: $title-color;
+    color: $primary-color;
+  }
+}
+.primary-btn2 {
+  display: inline-block;
+  background: $title-color;
+  padding: 0px 48px;
+  color: $primary-color;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 48px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  outline: none !important;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  @include transition();
+  &:hover {
+    background: transparent;
+    color: $title-color;
+    border: 1px solid $title-color;
+  }
+}
+.white_bg_btn {
+  background: #fff;
+  display: inline-block;
+  color: $title-color;
+  line-height: 40px;
+  padding: 0px 28px;
+  font-size: 14px;
+  font-family: $primary-font;
+  font-weight: 500;
+  text-transform: uppercase;
+  @include transition;
+  border: none;
+  &:hover {
+    background: $primary-color;
+    color: #fff;
+  }
+}
+.blog_btn {
+  border: 1px solid #eeeeee;
+  background: #f1f9ff;
+  padding: 0px 32px;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: $primary-font;
+  color: $title-color;
+  line-height: 34px;
+  display: inline-block;
+  &:hover {
+    background: $primary-color;
+    border-color: $primary-color;
+    color: $title-color;
+  }
+}
+
+/* End Main Button Area css
+============================================================================================ */

@@ -1,0 +1,82 @@
+@font-face {
+font-family: "Flaticon1";
+src: url("flaticon1.eot");
+src: url("flaticon1.eot#iefix") format("embedded-opentype"),
+url("flaticon1.woff") format("woff"),
+url("flaticon1.ttf") format("truetype"),
+url("flaticon1.svg") format("svg");
+font-weight: normal
+font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  background-color: white;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  color:#032246;
+}
+
+input[type=submit] {
+  background-color: #032246;
+  color:#fec63c;
+  padding: 12px 20px;
+  margin: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #fec63c;
+  color:#032246;
+}
+
+h2{
+color:#032246;}
+
+.container {
+  border-radius: 5px;
+  background-color: #ece7eb;
+  padding: 5px;
+  margin: 20px 200px;
+
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}

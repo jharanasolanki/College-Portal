@@ -1,0 +1,675 @@
+/* Start About Area css
+============================================================================================ */
+.h_blog_item {
+  .col-lg-6 {
+    vertical-align: middle;
+    align-self: center;
+  }
+  .h_blog_img {
+    position: relative;
+    z-index: 10;
+  }
+  .h_blog_text {
+    padding-top: 0px;
+    padding-bottom: 20px;
+    .h_blog_text_inner {
+      background: #fff;
+      padding: 75px 90px;
+      border-radius: 10px;
+      @media (max-width: 991px) {
+        padding: 30px 15px;
+      }
+      &.left {
+        position: relative;
+        z-index: 2;
+      }
+      &.right {
+        margin-left: -104px;
+        position: relative;
+        z-index: 1;
+        border: 10px solid $offwhite;
+        @media (max-width: 991px) {
+          margin-left: 0px;
+        }
+      }
+      h4 {
+        color: $title-color;
+        font-size: 30px;
+        margin-bottom: 15px;
+      }
+      p {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+/* End About Area css
+============================================================================================ */
+
+/* Start Features Area css
+============================================================================================ */
+
+.feature_area {
+  padding-bottom: 100px;
+  @media (max-width: 991px) {
+    padding-bottom: 40px;
+  }
+}
+
+.single_feature {
+  position: relative;
+  background: $offwhite;
+  padding: 40px 36px;
+  margin-bottom: 30px;
+  @include transition();
+  @media (max-width: 480px) {
+    padding: 40px 20px;
+  }
+  .icon {
+    span {
+      font-size: 30px;
+    }
+  }
+  h4 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  p {
+    margin-bottom: 0px;
+  }
+  &:hover {
+    box-shadow: 0px 10px 30px rgba($title-color, 0.1);
+  }
+}
+
+/* End Features Area css
+============================================================================================ */
+
+/* Start Popular Courses Area css
+============================================================================================ */
+
+.popular_courses {
+  padding-bottom: 100px;
+  @media (max-width: 991px) {
+    padding-bottom: 40px;
+  }
+  .owl-item {
+    opacity: 0;
+    @include transition();
+    padding: 0px 10px;
+    padding-bottom: 30px;
+  }
+  .owl-item.active {
+    opacity: 1;
+  }
+  .owl-nav {
+    display: flex !important;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    width: 120%;
+    transform: translateY(-50%);
+    left: -11%;
+    @media (max-width: 991px) {
+      display: none!important;
+    }
+    .owl-prev,
+    .owl-next {
+      img {
+        @include filter(grayscale(100%));
+        @include transition();
+        &:hover {
+          @include filter(grayscale(0%));
+        }
+      }
+    }
+  }
+}
+
+.single_course {
+  @include transition();
+  .course_head {
+    position: relative;
+    overflow: hidden;
+    img {
+      @include transition();
+    }
+  }
+
+  .price {
+    position: absolute;
+    top: -34px;
+    right: 15px;
+    z-index: 2;
+    color: $title-color;
+    display: inline-block;
+    height: 65px;
+    line-height: 65px;
+    width: 65px;
+    text-align: center;
+    border-radius: 50px;
+    background: $primary-color;
+    font-family: $title-font;
+    font-weight: 500;
+    font-size: 20px;
+    @include transition();
+    img {
+      margin-top: -8px;
+      @include transition();
+    }
+  }
+  .course_content {
+    padding: 30px 26px;
+    background: $offwhite;
+    position: relative;
+    @include transition();
+    .tag {
+      padding: 2px 21px;
+      font-size: 13px;
+      color: #fff;
+      background: $title-color;
+      text-transform: uppercase;
+    }
+    h4 {
+      font-size: 20px;
+      font-weight: 500;
+      a {
+        color: $title-color;
+      }
+    }
+    p {
+      margin: 0;
+    }
+    .course_meta {
+      margin-top: 25px;
+      .meta_info {
+        a {
+          color: $title-color;
+        }
+      }
+    }
+  }
+  .authr_meta {
+    img {
+      width: auto !important;
+      display: inline-block !important;
+    }
+    span {
+      color: $title-color;
+      font-weight: 500;
+    }
+  }
+  &:hover {
+    box-shadow: 0px 10px 30px rgba($title-color, 0.1);
+    .course_head {
+      img {
+        @include transform(scale(1.2));
+      }
+    }
+    .course_content {
+      background: #fff;
+    }
+    .price {
+      background: $title-color;
+      color: $primary-color;
+    }
+    h4 {
+      a {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+/* End Popular Courses Area css
+============================================================================================ */
+
+/* Start Courses Details Area css
+============================================================================================ */
+
+.course_details_area {
+  .title {
+    font-size: 21px;
+    border: none;
+    cursor: pointer;
+    margin-top: 40px;
+    border-bottom: 1px solid #eeeeee;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 22px;
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      height: 1px;
+      width: 74px;
+      background: $primary-color;
+    }
+  }
+}
+
+.course_details_left {
+  .content_wrapper {
+  }
+  .content {
+  }
+  .course_list {
+    margin-bottom: 0;
+    @media (max-width: 575px) {
+      padding-left: 0;
+    }
+    li {
+      list-style: none;
+      margin-bottom: 20px;
+      .primary-btn {
+        background: #f9f9f9;
+        color: $text-color;
+        box-shadow: none;
+        font-size: 12px;
+        border-radius: 0px;
+        &:hover {
+          background: $primary-color;
+          color: #ffffff;
+        }
+        @media (max-width: 575px) {
+          min-width: 100px;
+          font-size: 10px;
+          padding: 0 10px;
+        }
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.right-contents {
+  @media (max-width: 991px) {
+    margin-top: 50px;
+  }
+  ul {
+    padding-left: 0;
+    li {
+      list-style: none;
+      background: #f9f9f9;
+      padding: 10px 22px;
+      margin-bottom: 10px;
+      a {
+        color: $text-color;
+        text-align: left;
+        p {
+          margin-bottom: 0px;
+        }
+      }
+      .or {
+        color: $title-color;
+        font-weight: 500;
+      }
+    }
+  }
+  .enroll {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .reviews {
+    span,
+    .star {
+      width: 31%;
+      margin-bottom: 10px;
+    }
+  }
+  .avg-review {
+    background: #04091e;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 20px 0px;
+    span {
+      font-size: 18px;
+      color: $primary-color;
+    }
+    @media (max-width: 991px) {
+      margin-bottom: 20px;
+    }
+  }
+  .single-reviews {
+    .thumb {
+      @media (max-width: 1024px) {
+        margin-right: 10px;
+      }
+    }
+    h5 {
+      display: inline-flex;
+      @media (max-width: 1024px) {
+        display: block;
+      }
+      .star {
+        margin-left: 10px;
+        @media (max-width: 1024px) {
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+  .feedeback {
+    margin-top: 30px;
+    textarea {
+      resize: none;
+      height: 130px;
+      background: $offwhite;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+  .star {
+    .checked {
+      color: $primary-color;
+    }
+  }
+  .comments-area {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    .star {
+      margin-left: 20px;
+    }
+  }
+}
+
+/* End  Courses Details Area css
+============================================================================================ */
+
+/* Start Registration Area css
+============================================================================================ */
+
+.registration_area {
+  background: $title-color;
+}
+
+.clock_sec {
+  color: #fff;
+  h1 {
+    font-size: 42px;
+    color: #fff;
+    @media (max-width: 575px) {
+      font-size: 30px;
+    }
+  }
+  .clockinner {
+    background: #334f6c;
+    padding: 35px 20px;
+    margin-right: 15px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    margin-top: 65px;
+    @media (max-width: 991px) {
+      margin-top: 40px;
+    }
+    @media (max-width: 767px) {
+      margin: 0 15px;
+      padding: 10px;
+      margin-top: 30px;
+    }
+    @media (max-width: 400px) {
+      margin-right: 0;
+      padding: 10px 5px;
+    }
+    &:last-child {
+      margin-right: 0;
+      @media (max-width: 575px) {
+        margin-right: 15px;
+      }
+    }
+    h1 {
+      font-size: 36px;
+      display: inline-block;
+      @media (max-width: 1199px) {
+        display: block;
+      }
+    }
+  }
+}
+
+.register_form {
+  background: #fff;
+  text-align: center;
+  padding: 40px;
+  @media (max-width: 991px) {
+    margin-top: 60px;
+  }
+  h3 {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+  input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #eeeeee;
+    padding: 12px;
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+    @include placeholder {
+      color: #aaaaaa;
+      font-size: 14px;
+      font-weight: 500;
+      font-family: $primary-font;
+    }
+  }
+  .primary-btn {
+    width: 100%;
+    border-radius: 0;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+}
+
+/* End Registration Area css
+============================================================================================ */
+
+/* Start Trainers Area css
+============================================================================================ */
+.trainer_area {
+  padding-bottom: 100px;
+  @media (max-width: 991px) {
+    padding-bottom: 40px;
+  }
+}
+
+.single-trainer {
+  margin-bottom: 30px;
+  .thumb {
+    position: relative;
+  }
+  .meta-text {
+    background: $offwhite;
+    padding: 20px 25px;
+    box-shadow: 0px 0px 30px rgba(153, 153, 153, 0.13);
+    @include transition();
+    @media (max-width: 991px) {
+      padding: 20px 20px;
+    }
+    background: #ffffff;
+    h4 {
+      font-size: 20px;
+      margin-bottom: 0px;
+    }
+    .designation {
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+    a {
+      font-size: 14px;
+      margin: 0 10px;
+      color: #cccccc;
+      @include transition();
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+  &:hover {
+    .meta-text {
+      box-shadow: 0px 10px 30px rgba($title-color, 0.15);
+    }
+  }
+}
+/* End Trainers Area css
+============================================================================================ */
+
+/* Start Event Area css
+============================================================================================ */
+
+.events_area {
+  padding: 130px 0 100px;
+  background: $title-color;
+  @media (max-width: 991px) {
+    padding: 70px 0;
+  }
+  .event-link {
+    color: $primary-color;
+    font-size: 13px;
+    text-transform: uppercase;
+    img {
+      margin-left: 5px;
+      display: inline-block;
+    }
+  }
+}
+
+.single_event {
+  margin-bottom: 30px;
+  .event_thumb {
+    overflow: hidden;
+    img {
+      @include transition();
+    }
+  }
+  .event_details {
+    background: rgba($title-color, 0.5);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 275px;
+    padding: 30px 25px;
+    color: #ffffff;
+    .date {
+      color: #ffffff;
+      padding-right: 15px;
+      border-right: 2px solid #fff;
+      font-family: $title-font;
+      font-size: 14px;
+      span {
+        display: block;
+        color: $primary-color;
+        font-size: 28px;
+        font-weight: 500;
+      }
+    }
+    .time-location {
+      padding-left: 15px;
+      font-size: 14px;
+      p {
+        margin-bottom: 0px;
+        span {
+          color: #ffffff;
+          font-size: 13px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+    h4 {
+      a {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+/* End Event Area css
+============================================================================================ */
+
+/* Start Testimonial Area css
+============================================================================================ */
+.testimonial_area {
+  .owl-carousel {
+    .owl-dots {
+      display: block !important;
+      text-align: center;
+      .owl-dot {
+        height: 10px;
+        width: 10px;
+        background: #d8d8d8;
+        border-radius: 17px;
+        display: inline-block;
+        margin-right: 10px;
+        @include transition();
+        &.active {
+          height: 12px;
+          width: 12px;
+          background: $primary-color;
+        }
+      }
+      @media (max-width: 991px) {
+        display: none !important;
+      }
+    }
+    // .owl-item {
+    //   img {
+    //     width: auto !important;
+    //   }
+    // }
+  }
+}
+.testi_item {
+  padding: 50px 55px;
+  margin-bottom: 200px;
+  margin-left: 10px;
+  margin: 0px 10px 80px;
+  box-shadow: 0px 15px 30px 0px rgba(221, 221, 221, 0.3);
+  @include transition();
+  @media (max-width: 991px) {
+    margin-bottom: 0px;
+  }
+  @media (max-width: 575px) {
+    padding: 30px 20px;
+  }
+  img {
+    border-radius: 5px;
+  }
+  .col-lg-8 {
+    vertical-align: middle;
+    align-self: center;
+  }
+  .testi_text {
+    @media (max-width: 991px) {
+      margin-top: 50px;
+    }
+    h4 {
+      font-size: 20px;
+      margin-bottom: 15px;
+      text-transform: capitalize;
+    }
+    p {
+      margin-bottom: 0px;
+    }
+  }
+  &:hover {
+    box-shadow: 0px 10px 30px 0px rgba($title-color, 0.1);
+  }
+}
+/* End Testimonial Area css
+============================================================================================ */
